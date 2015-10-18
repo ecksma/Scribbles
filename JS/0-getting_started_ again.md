@@ -2,7 +2,7 @@
 Data Types and Objects in Js
 ========================
 
-#### Data Types
+## Data Types
 	  * Boolean
 	  * Null (nonexistent object)
 	  * Undefined (empty variable)
@@ -17,7 +17,7 @@ var foo = true;  // foo is now a Boolean
 ```
 
 
-#### Objects
+## Objects
 
 >Object refers to a data structure containing data and instructions for working with the data. Objects sometimes refer to real-world things, for example a car or map object in a racing game.
 
@@ -28,6 +28,15 @@ myCar.model = "Mustang";
 myCar.year = 1969;
 ```
 
+Object literal notation
+
+```javascript
+var myCar = {
+  make: 'Ford',
+  model: 'Mustang'
+  year: '1969'
+}
+```
 You can use the bracket notation with `for...in` to iterate over all the enumerable properties of an object. To illustrate how this works, the following function displays the properties of the object when you pass the object and the object's name as arguments to the function:
 
 ```javascript
