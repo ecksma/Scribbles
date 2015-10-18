@@ -56,3 +56,5 @@ myCar.year = 1969
  2 [Different ways to define an object [SO]](http://stackoverflow.com/questions/1143498/difference-between-an-object-and-a-hash)
  
  3 [Working with strings](http://learnjsdata.com/strings.html)
+
+4 [Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
