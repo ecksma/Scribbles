@@ -79,15 +79,6 @@ for (i = 0; i < m.length; i++) {
 ```
 
 ```
-var movieData = {director: "Burton", year: 1993, title: "The Nightmare Before Christmas", price: 4.55}
-for (key in movieData){
-	if (movieData.hasOwnProperty(key)){
-		console.log(key + ": ", movieData[key]);
-	}
-}
-```
-
-```
 while (timeBeforeWork > 180000) { // Remember JS counts time in milliseconds
   hitSnooze()
 }
