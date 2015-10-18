@@ -1,5 +1,5 @@
 
-Getting started with JS (again)
+Data Types and Objects in Js
 ========================
 
 #### Data Types
