@@ -21,13 +21,6 @@ var foo = true;  // foo is now a Boolean
 
 >Object refers to a data structure containing data and instructions for working with the data. Objects sometimes refer to real-world things, for example a car or map object in a racing game.
 
-```javascript
-var myCar = new Object();
-myCar.make = "Ford";
-myCar.model = "Mustang";
-myCar.year = 1969;
-```
-
 Object literal notation
 
 ```javascript
