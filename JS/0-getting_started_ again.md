@@ -2,7 +2,7 @@
 Getting started with JS (again)
 ========================
 
-#### Primitives
+#### Data Types
 	  * Boolean
 	  * Null (nonexistent object)
 	  * Undefined (empty variable)
@@ -16,6 +16,39 @@ var foo = "bar"; // foo is now a String
 var foo = true;  // foo is now a Boolean
 ```
 
+
+#### Objects
+
+>Object refers to a data structure containing data and instructions for working with the data. Objects sometimes refer to real-world things, for example a car or map object in a racing game.
+
+```javascript
+var myCar = new Object();
+myCar.make = "Ford";
+myCar.model = "Mustang";
+myCar.year = 1969;
+```
+
+You can use the bracket notation with `for...in` to iterate over all the enumerable properties of an object. To illustrate how this works, the following function displays the properties of the object when you pass the object and the object's name as arguments to the function:
+
+```javascript
+function showProps(obj, objName) {
+  var result = "";
+  for (var i in obj) {
+    if (obj.hasOwnProperty(i)) {
+        result += objName + "." + i + " = " + obj[i] + "\n";
+    }
+  }
+  return result;
+}
+```
+
+So, the function call showProps(myCar, "myCar") would return the following:
+
+```javascript
+myCar.make = Ford
+myCar.model = Mustang
+myCar.year = 1969
+```
 **Further Reading**
 
 1 [JavaScript data types and data structures [MDN]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
