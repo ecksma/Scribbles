@@ -42,6 +42,7 @@ console.log(x)
 ####Some Functions to get the idea
 
 > `getMax` function that finds the maximum number in an array
+
 ```javascript
 var getMax = function(arr) {
   var max = 0;
@@ -52,7 +53,6 @@ var getMax = function(arr) {
   }
   return max;
 };
-
 getMax([65, 234, 99, 0, 12, 450]);
 ```
 
