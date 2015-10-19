@@ -81,3 +81,8 @@ button.onclick = function(event){
 * [Document Object Model docs (Mozilla)](https://developer.mozilla.org/en-US/docs/Web/API/document)
 * [Document Object Model docs (W3Schools)](http://www.w3schools.com/jsref/dom_obj_document.asp)
 * [List of DOM Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+#### Further Reading
+
+  * [Getting started with selectors [MDN]](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors)
+  * [Selectors with multiple classes and ids [CSS Tricks]](https://css-tricks.com/multiple-class-id-selectors/)
