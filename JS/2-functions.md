@@ -39,7 +39,7 @@ console.log(x)
 
 ```
 
-## Further Reading
+#### Further Reading
 
 * [Functions - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
 * [Functions - Eloquent JavaScript](http://eloquentjavascript.net/03_functions.html)
