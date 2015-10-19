@@ -38,3 +38,9 @@ console.log(x)
 // logs what? (1)
 
 ```
+
+## Further Reading
+
+* [Functions - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
+* [Functions - Eloquent JavaScript](http://eloquentjavascript.net/03_functions.html)
+* [Demystifying JavaScript Variable Scope and Hoisting](http://www.sitepoint.com/demystifying-javascript-variable-scope-hoisting)
