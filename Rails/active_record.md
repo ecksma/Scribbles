@@ -139,7 +139,7 @@ Destroy - `user.destroy`
 `User.order('last_name ASC')`
 
 
- Advanced Active Record
+#Advanced Active Record
 
 Active Record is Rails data layer or ORM. It can do basic queries with `find`, `find_by`, `where`, `order`, and `uniq`, but it can also do more advanced queries: `average`, `sum`, `pluck`, `join`, `includes`, and [many more](http://guides.rubyonrails.org/active_record_querying.html)
 
