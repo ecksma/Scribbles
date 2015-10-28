@@ -4,6 +4,9 @@ The dom and JS
 
 #Document Object Model (DOM)
 
+The DOM is how JavaScript code can interact with elements on a HTML web page.As specified by the DOM API, each HTML element is represented by an object, hence the term “Object Model”. Each object has various properties and methods that corresponds to the appearence or behavior of the corresponding HTML element. The object also has parents, children and siblings as specified by the DOM tree.
+
+Each node has a type, corresponding to what kind of HTML element it represents. Each node has different properties and methods available, depending on its type. There is a type hierarchy for DOM nodes, as shown below. The base type of all dom nodes is Node, which contains methods for traversing the tree. All HTML elements would have the type Element and HTMLElement, but an image would have type HTML and so on.
 
 
 #### Select Elements
