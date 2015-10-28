@@ -66,6 +66,15 @@ Get DOM elements by HTML tag
 var el = document.getElementsByTagName("h1");
 ```
 
+#Event-based Programming
+
+The programs discussed so far are sequential. When they are loaded, they perform a series of instructions. This is analogous to having a main function in C++ or Java: when the program is run, the main function is run until it is completed, then the program quits.
+
+However, JavaScript is often used for programming client-side interfaces. We want a client-side interface to perform actions in response to user actions. Enter event-based programming.
+
+Event-based programming (also known as event-driven programming) is a programming paradigm in which we write programs that respond to events. An event can be anything interesting that happens to the program. For instance, a page load, keyboard button press, or mouse click can all be events. When these events occur, the program will run a given function. This function is known as a the event listener or event handler.
+
+
 #### Add Dynamic Changes to Events with Functions
 Add a function
 ```
