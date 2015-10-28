@@ -3,6 +3,15 @@
 
 As the name suggests, jQuery is focused on queries. A query uses CSS selectors to get a set of elements in the document. We can then perform operations on all the selected elements at once.
 
+Recall that we can call the $() method on a single element in order to get a selection of one object. We can also select a single element using document.getElementbyId.
+
+```javascript
+var jqElem = $("#egg");
+var domElem = document.getElementById("egg");
+```
+
+Both jqElem and domElem refer to a single element, but they don’t work in the same way. This is because these two objects are different kinds of objects. domElem is a raw DOM element object, whereas jqElem is a jQuery object. You can see this by looking at the available methods: jqElem only has methods available to jQuery objects, and domElem only has methods available to DOM elements. A jQuery object behaves like a wrapper around the underlying DOM objects. It provides you with new methods, and it executes the methods by performing actions on the underlying DOM object.
+
 
 ##The $ variable
 
