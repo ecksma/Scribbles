@@ -8,6 +8,33 @@ The DOM is how JavaScript code can interact with elements on a HTML web page.As 
 
 Each node has a type, corresponding to what kind of HTML element it represents. Each node has different properties and methods available, depending on its type. There is a type hierarchy for DOM nodes, as shown below. The base type of all dom nodes is Node, which contains methods for traversing the tree. All HTML elements would have the type Element and HTMLElement, but an image would have type HTML and so on.
 
+# The Document Object
+
+The document object represents the HTML document itself. It is at the root of the DOM tree that we previously discussed. It also provides us with a number of methods for searching for other nodes in the document.
+
+####Traversing the DOM Tree
+
+Once you have an element, there are a number of elements that let you get elements from elsewhere in the tree.
+
+element.parentNode
+Returns the parent node of the given element.
+
+element.childNodes
+Returns a collection of child nodes of the given element.
+
+element.firstChild
+Returns the node’s first child in the tree, or null if the node is 
+childless.
+
+element.lastChild
+Returns the node’s last child in the tree, or null if the node is childless.
+
+element.nextSibling
+Returns the node immediately following the specified one in its parent’s childNodes list, or null if the specified node is the last node in that list.
+
+element.previousSibling
+Returns the node immediately preceding the specified one in its parent’s childNodes list, null if the specified node is the first in that list.
+
 
 #### Select Elements
 
