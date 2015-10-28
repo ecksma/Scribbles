@@ -37,14 +37,19 @@ Notice that we used the # symbol to indicate that the string is an id. This look
 
 All Selector (”*”)
 Selects all elements.
+
 Class Selector (“.class”)
 Selects all elements with the given class.
+
 Element Selector (“element”)
 Selects all elements with the given tag name.
+
 ID Selector (“#id”)
 Selects a single element with the given id attribute.
+
 Multiple Selector (“selector1, selector2, selectorN”)
 Selects the combined results of all the specified selectors.
+
 Descendant Selector (“ancestor descendant”)
 Selects all elements that are descendants of a given ancestor.
 
