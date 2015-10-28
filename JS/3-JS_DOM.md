@@ -1,6 +1,11 @@
 
 The dom and JS
 ===
+
+#Document Object Model (DOM)
+
+
+
 #### Select Elements
 
 Get the first matching DOM element by selector
