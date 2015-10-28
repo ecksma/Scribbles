@@ -62,24 +62,3 @@ Selects the combined results of all the specified selectors.
 Descendant Selector (“ancestor descendant”)
 Selects all elements that are descendants of a given ancestor.
 
-##Manipulating Elements
-
-jQuery objects are somewhat different from raw DOM objects. jQuery are raw DOM objects wrapped with a layer that provides us with new methods to work with those objects. These methods are usually much easier to use than the native DOM methods.
-
-The attr method allows us to get and set HTML attributes. When called with an attribute name, the attr method gets the current value of that attribute.
-
-When called with an attribute name and a new value, the attr method sets that attribute to the given value. When called with a map of attribute names and new values, the attr method sets each attribute to the corresponding new value.
-
-The css method allows us to get and set CSS styles. Its usage is identical to the usage of attr. When called with a CSS property name, the css method gets the current value of that CSS property. It does so by inspecting the style attribute on the element. Note that it is unable to obtain the style of the element as defined in the CSS stylesheet.
-
-When called with a CSS property name and a new value, the css method sets that style to the given value. When called with a map of CSS properties and new values, the css method sets each CSS property to the corresponding new value. These properties are set by modifying the style attribute on the element. The CSS stylesheets will remain unchanged.
-
-Often, we want to change many styles on an element at once. For instance, if we were building a custom toggle button, we might want to have a set of styles for selected buttons, and a different set of styles for an unselected button. Rather than using the css method to set up all of the styles, it is easier to define the styles as a class style in a CSS stylesheet, and then apply the appropriate classes to the elements.
-
-The addClass and removeClass methods enable us to do this. Both methods take a single argument, which should be string of classes to be added or removed. Multiple classes should be separated by spaces.
-
-We often want to control if elements on a page are visible or invisible. For instance, if we were building a tooltip help widget, we could create HTML elements corresponding to each . The easiest way to do this is to set the CSS property display to none when the element is to be hidden, and to the original value, either block or inline, when the element is to be displayed. This is such a common idiom that jQuery provides helper methods to do this.
-
-The hide and show methods hide or show an element respectively. They work by modifying the display property inline CSS in the manner described above.
-
-Finally, the val method allows us to get or set the values of form elements.
