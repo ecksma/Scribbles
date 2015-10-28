@@ -13,9 +13,13 @@ $ is a function object, which means that it can be called as a function, but it 
 $ is a heavily overloaded function. It takes a single argument, and always returns a jQuery collection. Depending on the type of the argument, it can do four different things:
 
 -If the argument is a CSS selector, it returns a jQuery collection of   DOM elements that match the selector.
+
 -If the argument is a HTML string, it creates a new DOM element from the HTML string, and returns it as a jQuery jQuery collection.
+
 -If the argument is a DOM element, it returns the DOM element as a jQuery collection.
+
 -If the argument is absent, it returns an empty jQuery collection.
+
 -If the argument is a jQuery collection, it returns the jQuery collection unchanged. Therefore calling $ on the output of $ is a no-op.
 
 
