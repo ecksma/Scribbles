@@ -14,7 +14,7 @@ $ is a heavily overloaded function. It takes a single argument, and always retur
 
 -If the argument is a CSS selector, it returns a jQuery collection of   DOM elements that match the selector.
 
--If the argument is a HTML string, it creates a new DOM element from the HTML string, and returns it as a jQuery jQuery collection.
+-If the argument is a HTML string, it creates a new DOM element from the HTML string, and returns it as a jQuery collection.
 
 -If the argument is a DOM element, it returns the DOM element as a jQuery collection.
 
