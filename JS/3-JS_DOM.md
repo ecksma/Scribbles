@@ -76,7 +76,8 @@ Event-based programming (also known as event-driven programming) is a programmin
 
 
 #### Add Dynamic Changes to Events with Functions
-Add a function
+The best way to register an event listener is to use the addEventListener method. The receiver of the method is the target of the event. The first parameter should be the name of the event, and the second parameter should be callback function that is fired upon receiving the event. The third event specifies whether the listener has a property called “capture”, which causes the listener to fire before the normal event bubbling chain. (In theory, the third parameter should be optional and default to false. In practice, many browsers consider a missing third parameter to be an error, so you should always include it and set it to false.)
+
 ```
 el.addEventListener("click", function() {
   alert("you clicked a button");
