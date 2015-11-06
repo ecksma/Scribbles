@@ -1,5 +1,5 @@
 
-#Input 
+#I / O
 
 
 #### Grabbing input from the user in the browser
@@ -7,6 +7,39 @@
 ```
 var color = prompt(“What is your favorite color?”)
 ```
+
+#### Reading from a file
+
+```js
+var fs = require('fs');
+
+fs.readFile("somefile.txt", function(err, data) {
+  if (err) {
+    console.log("oh no!");
+    console.log(err);
+  } else {
+    var text = data.toString();
+    console.log(text);
+  }
+})
+```
+
+#### Writing to a file
+
+```js
+var fs = require('fs');
+
+var txt = "hello";
+
+fs.writeFile("blah.txt", txt, function (err) {
+  if (err) {
+    console.log(err)
+  } else {
+    console.log("it worked!")
+  }
+});
+```
+
 Conditionals
 ==========
 
@@ -65,6 +98,28 @@ var lettery = word.charAt(2);
 var random = Math.floor(Math.random()*10) + 1;
 ```
 
+####JSON Serialization
+
+Converting from a javascript data type to a JSON string **(Serializing)**:
+```js
+var someData = {name: "lil", color: "beige"}
+var myJson = JSON.stringify(someData);
+```
+
+Converting from a JSON string to a raw javascript data type **(Deserializing)**:
+```js
+var someData = JSON.parse(someJSON);
+```
+
+####String joining
+
+```js
+var a = [1,2,3,4];
+var joined = a.join("-");
+//joined now is "1-2-3-4"
+var j2 = a.join("/");
+//j2 now is "1/2/3/4"
+```
 
 Arrays
 =====
@@ -413,7 +468,7 @@ node_modules
 .DS_Store
 ```
 
-## wscat
+####wscat
 
 listening on port 3000:
 ```
@@ -432,5 +487,90 @@ var server = new WebSocketServer({port: 3000});
 server.on("connection", function(ws) {
   console.log("Client connected!");
 });
+```
+
+## Client Websockets
+
+```js
+var WebSocket = require("ws");
+var ws = new WebSocket("ws://localhost:3000");
+
+ws.on("open", function () {
+  console.log("Connected to server.");
+});
+```
+
+#### Sending data to the server
+```js
+ws.send(message);
+```
+
+#### Receiving data from the server
+```js
+ws.on("message", function(message) {
+  //message is the data from teh server
+});
+```
+
+##Websocket Client (in the browser)
+```js
+var ws = new WebSocket("ws://localhost:3000");
+ws.addEventListener("open", function(evt) {
+  console.log("connected");
+});
+
+ws.addEventListener("message", function(evt) {
+  console.log(evt.data);
+});
+```
+
+## Websocket close event
+
+Manually closing a connection
+```js
+ws.close()
+```
+
+Listening for the event (for when the other end closes the connection)
+```js
+ws.on("close", function() {
+  //do something
+})
+```
+
+
+#HTTP in Node
+
+#### Create an http server
+
+```js
+var http = require ('http');
+var server = http.createServer(function(request, response){
+  console.log("the url is " + request.url);
+  response.end("Hello World")
+})
+server.listen(2000)
+```
+
+#### Test your http server in the terminal (Cool Kids trick)
+
+```
+curl localhost:2000
+```
+
+#### History server sample code
+```js
+var WSS = require('ws').Server;
+var server = new WSS({port: 3000});
+
+var history = [];
+
+server.on("connection", function(ws) {
+  ws.on("message", function(msg) {
+    history.push(msg);
+  });
+  var historyMsg = history.join("\n");
+  ws.send(historyMsg);
+})
 ```
 
